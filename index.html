@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-group input[type="text"] {
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .predict-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .predict-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Weather Prediction Form</h1>
+        </div>
+        <form action="/predict" method="post">
+            <div class="form-group">
+                <label>Temperature (Fahrenheit):</label>
+                <input type="text" name="temperature_fahrenheit">
+            </div>
+            <div class="form-group">
+                <label>Feels Like (Celsius):</label>
+                <input type="text" name="feels_like_celsius">
+            </div>
+            <div class="form-group">
+                <label>Temperature Feels Diff:</label>
+                <input type="text" name="temperature_feels_diff">
+            </div>
+            <div class="form-group">
+                <label>Feels Like (Fahrenheit):</label>
+                <input type="text" name="feels_like_fahrenheit">
+            </div>
+            <div class="form-group">
+                <label>Last Updated Day:</label>
+                <input type="text" name="last_updated_day">
+            </div>
+            <div class="form-group">
+                <label>Moonlight Duration:</label>
+                <input type="text" name="moonlight_duration">
+            </div>
+            <div class="form-group">
+                <label>Day:</label>
+                <input type="text" name="day">
+            </div>
+            <div class="form-group">
+                <label>Moon Illumination:</label>
+                <input type="text" name="moon_illumination">
+            </div>
+            <div class="form-group">
+                <label>Wind Power:</label>
+                <input type="text" name="wind_power">
+            </div>
+            <div class="form-group">
+                <label>Daylight Duration:</label>
+                <input type="text" name="daylight_duration">
+            </div>
+            <button type="submit" class="predict-button">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
